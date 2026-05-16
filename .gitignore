@@ -1,0 +1,6 @@
+.env
+out/
+cache/
+broadcast/
+coverage/
+node_modules/
