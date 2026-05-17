@@ -1,6 +1,6 @@
 specVersion: 0.0.5
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: ethereum
     name: PredictionMarket
@@ -21,7 +21,7 @@ dataSources:
         - MarketStats
       abis:
         - name: PredictionMarket
-          file: ./abis/PredictionMarket.json
+          file: PredictionMarket\PredictionMarket.json
       eventHandlers:
         - event: MarketCreated(indexed uint256,string,address,uint256)
           handler: handleMarketCreated
@@ -35,4 +35,4 @@ dataSources:
           handler: handleMarketResolved
         - event: Redeemed(indexed uint256,indexed address,uint256)
           handler: handleRedeemed
-      file: ./src/mapping.ts
+      file: PredictionMarket\PredictionMarket.wasm
